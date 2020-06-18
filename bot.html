@@ -3,7 +3,7 @@
 </head>
 <body>
 chat page <br/>
-  <style type='text/css'>
+<style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #005290;
 		font-family: "Arial", sans-serif;
@@ -38,16 +38,16 @@ chat page <br/>
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://zerotest-dev-ed.my.salesforce.com',
-			'https://custcheck-developer-edition.gus.force.com',
+			'https://java-ability-4506-dev-ed.cs96.my.salesforce.com',
+			'https://sandbox-java-ability-4506-dev-ed-172c9b441d5.cs96.force.com',
 			gslbBaseURL,
-			'00DB0000000YMtd',
+			'00D1g0000005ZU3',
 			'chatqgroup',
 			{
-				baseLiveAgentContentURL: 'https://c.gla3-phx.gus.salesforce.com/content',
-				deploymentId: '572B0000000H1iX',
-				buttonId: '573B0000000H1t7',
-				baseLiveAgentURL: 'https://d.gla3-phx.gus.salesforce.com/chat',
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-ord.salesforceliveagent.com/content',
+				deploymentId: '5721g00000003dO',
+				buttonId: '5731g00000005w1',
+				baseLiveAgentURL: 'https://d.la2-c1cs-ord.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'chatqgroup',
 				isOfflineSupportEnabled: false
 			}
@@ -56,7 +56,7 @@ chat page <br/>
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://zerotest-dev-ed.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://java-ability-4506-dev-ed.cs96.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
