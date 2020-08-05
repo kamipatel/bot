@@ -3,7 +3,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 </head>
 <body>
-chat page <br/>
+Loan chat page <br/>
 
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
@@ -40,17 +40,17 @@ chat page <br/>
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://java-ability-4506-dev-ed.cs96.my.salesforce.com',
-			'https://sandbox-java-ability-4506-dev-ed-172c9b441d5.cs96.force.com',
+			'https://flow-customization-3651-dev-ed.cs69.my.salesforce.com',
+			'https://sandbox-loan-developer-edition.cs69.force.com/liveAgentSetupFlow',
 			gslbBaseURL,
-			'00D1g0000005ZU3',
-			'chatqgroup',
+			'00D2D000000DMyC',
+			'loanassistgrp',
 			{
-				baseLiveAgentContentURL: 'https://c.la2-c1cs-ord.salesforceliveagent.com/content',
-				deploymentId: '5721g00000003dO',
-				buttonId: '5731g00000005w1',
-				baseLiveAgentURL: 'https://d.la2-c1cs-ord.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'chatqgroup',
+				baseLiveAgentContentURL: 'https://c.la4-c1cs-phx.salesforceliveagent.com/content',
+				deploymentId: '5722D000000Cd4p',
+				buttonId: '5732D000000CdtP',
+				baseLiveAgentURL: 'https://d.la4-c1cs-phx.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'loanassistgrp',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -58,7 +58,7 @@ chat page <br/>
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://java-ability-4506-dev-ed.cs96.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://flow-customization-3651-dev-ed.cs69.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
